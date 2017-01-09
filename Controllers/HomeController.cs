@@ -1,10 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
- 
-public class HomeController : Controller
+
+namespace NewsSSourceCore
 {
-    [Route("home/index")]
-    public IActionResult Index()
+    public class HomeController : Controller
     {
-        return Ok("Hello World from a controller");
+        [Route("home/index")]
+        public IActionResult Index()
+        {
+            return Ok("Hello World from a controller");
+        }
     }
 }

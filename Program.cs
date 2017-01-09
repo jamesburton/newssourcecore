@@ -8,7 +8,7 @@ namespace NewsSourceCore
         public static void Main(string[] args)
         {
             //Console.WriteLine("Hello World!");
-            var host = new Microsoft.AspNetCore.Hosting.WebHostBuilder()
+            var host = new WebHostBuilder()
             .UseKestrel()
             .UseContentRoot(Directory.GetCurrentDirectory())
             .UseStartup<Startup>()
